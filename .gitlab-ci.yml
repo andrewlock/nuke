@@ -9,4 +9,4 @@ stages:
 build:
   stage: build
   script:
-    - './build.cmd Pack Test --verbosity verbose'
+    - './build.cmd Pack Test'
