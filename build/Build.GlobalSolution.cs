@@ -22,7 +22,7 @@ partial class Build
 {
     [Parameter] readonly bool UseHttps;
 
-    [Solution] readonly Nuke.Common.ProjectModel.Solution GlobalSolution;
+    [Solution("nuke-global.sln")] readonly Nuke.Common.ProjectModel.Solution GlobalSolution;
 
     AbsolutePath ExternalRepositoriesDirectory => RootDirectory / "external";
     AbsolutePath ExternalRepositoriesFile => ExternalRepositoriesDirectory / "repositories.yml";
