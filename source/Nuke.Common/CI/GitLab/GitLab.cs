@@ -200,7 +200,7 @@ namespace Nuke.Common.CI.GitLab
         /// <summary>
         /// The id of the user who started the job.
         /// </summary>
-        public string GitLabUserId => EnvironmentInfo.GetVariable<string>("GITLAB_USER_ID");
+        public long GitLabUserId => EnvironmentInfo.GetVariable<long>("GITLAB_USER_ID");
 
         /// <summary>
         /// The email of the user who started the job.
@@ -210,7 +210,7 @@ namespace Nuke.Common.CI.GitLab
         /// <summary>
         /// The login username of the user who started the job.
         /// </summary>
-        public long GitLabUserLogin => EnvironmentInfo.GetVariable<long>("GITLAB_USER_LOGIN");
+        public string GitLabUserLogin => EnvironmentInfo.GetVariable<string>("GITLAB_USER_LOGIN");
 
         /// <summary>
         /// The real name of the user who started the job.

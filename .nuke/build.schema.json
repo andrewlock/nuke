@@ -44,7 +44,7 @@
         },
         "GlobalSolution": {
           "type": "string",
-          "description": "Path to a solution file that is automatically loaded"
+          "description": "Path to a solution file that is automatically loaded. Default is nuke-global.sln"
         },
         "Help": {
           "type": "boolean",
